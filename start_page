@@ -1,8 +1,3 @@
-<%-- 
-    Document   : home
-    Created on : Feb 4, 2023, 4:37:13 PM
-    Author     : Yash
---%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,8 +22,8 @@
 
 <style>
     body {
-        background: #121212de;
-        color: WHITE;
+        background: rgb(241, 194, 194);
+        color: rgb(12, 12, 12);
     }
 
     .navigation {
@@ -39,7 +34,124 @@
         margin-top: 20px;
         margin-bottom: 5rem;
     }
+    /* Our services*/ 
+    #services{
+        margin: 34px;
+        display: flex;
+        
+    
+    }
+    #services .box{
+        border: 2px solid rgb(133, 131, 131);
+        padding: 34px;
+        margin: 3px 6px;
+        border-radius: 28px;
+        background-color: #ffffffde;
+    }
+    #services .box img{
+      height: 160px;
+      display: block;
+      margin: auto;
+    }
+    #services .box p {
+        font-family: 'Bree Serif', serif;  
+    
+    }
+    .h-primary{
+        font-family: 'Bree Serif', serif;
+         font-size: 3.8rem;
+        padding: 12px;
+        text-align: center;
+    }
 
+    /*Contant us*/
+    #contact{
+        position: relative;
+    }
+    #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        background: url('../contact.png') no-repeat center center/cover;
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+        
+        
+    }
+    #contact-box form{
+    width: 40%;
+    }
+    #contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    
+    }
+    
+    #contact-box textarea{
+        width: 80%;
+        padding: 0.5rem;
+        border-radius: 20px;
+        font-size: 0.5rem;
+        margin: 4px;
+    }
+
+     /*Footer*/
+     footer{
+        text-align: center;
+        background: black;
+        color: white;
+        padding: 10px 10px;
+    
+    }
+    
+    
+    
+    
+    .h-secondary{
+        font-family: 'Bree Serif', serif;
+        font-size: 2.3rem;
+        padding: 12px;
+        text-align: center;
+    }
+    #home h1{
+        color: white;
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+    }
+    #home p{
+        color:white;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Bree Serif', serif;
+    }
+    .btn{
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: rgb(233, 92, 92);
+        color: cornsilk;
+        margin: 17px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+        
+    }
+    .but{
+        padding: 6px 12px;
+        border: 2px solid white;
+        background-color:  rgb(233, 92, 92);
+        color: cornsilk;
+        margin: 6px;
+        font-size: 1.5rem;
+        border-radius: 11px;
+        cursor: pointer
+    }
     /* Since positioning the image, we need to help out the caption */
     .carousel-caption {
         bottom: 3rem;
@@ -90,6 +202,7 @@
         padding: 10px;
         z-index: 100;
         display: none;
+        border-radius: 23px;
         /*to hide popup initially*/
     }
     .btnl:hover{
@@ -106,12 +219,16 @@
             width: 20rem;
         }
     }
+    .navigation{
+        background: url('../logo.jpg') no-repeat center center/cover;
+    }
     
 </style>
 
 <body>
     <main>
         <div class="navigation">
+            
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container">
                     <a class="navbar-brand logo1" href="#"><img width="60%" src="https://mail.google.com/mail/u/0?ui=2&ik=f9a303c31d&attid=0.5&permmsgid=msg-a:r7190999459416845006&th=186744b2fa3fb6d3&view=att&disp=safe&realattid=f_leebjg6d4" alt="alt"/></a>
@@ -127,7 +244,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">Link</a> 
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -178,8 +295,10 @@
                         </svg>
 
                         <div class="container">
+                            <img src="Screenshot (253).png" alt=""> 
                             <div class="carousel-caption text-start">
-                                <h1 style="">Create your Society</h1>
+                                
+                                <h1 style="">Create your Society</h1> 
                                 <p>Create your own Society and add members in it.</p>
                                 <!--<p><a class="btn btn-lg btn-light" href="#">Sign up today</a></p>-->
                             </div>
@@ -193,7 +312,7 @@
 
                         <div class="container">
                             <div class="carousel-caption">
-                                <h1 style="color: red;">Join Society by Code.</h1>
+                                <h1 style="color: yellow;">Join Society by Code.</h1>
                                 <p>.</p>
                                 <!--<p><a class="btn btn-lg btn-light" href="#">Learn more</a></p>-->
                             </div>
@@ -225,6 +344,70 @@
                 </button>
             </div>
         </div>
+        <section id="services-container">
+            <h1 class="h-primary center">Our Services</h1>
+            <div id="services">
+                <div class="box">
+                    <img src="../chat-section.jpg" alt="">
+                    <h2 class="h-secondary center">Chat Section</h2>
+                    <p class="center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam molestias ad
+                        fuga, natus sit libero numquam officiis doloribus ex sapiente obcaecati dolorum perspiciatis!
+                        Distinctio illo delectus provident sint quam fuga deleniti recusandae, itaque obcaecati.
+                       
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="../images.png" alt="">
+                    <h2 class="h-secondary center">Payments & Expense</h2>
+                    <p class="center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam molestias ad
+                        fuga, natus sit libero numquam officiis doloribus ex sapiente obcaecati dolorum perspiciatis!
+                        Distinctio illo delectus provident sint quam fuga deleniti recusandae, itaque obcaecati.
+                       
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="../security.jpeg" alt="">
+                    <h2 class="h-secondary center">Security</h2>
+                    <p class="center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam molestias ad
+                        fuga, natus sit libero numquam officiis doloribus ex sapiente obcaecati dolorum perspiciatis!
+                        Distinctio illo delectus provident sint quam fuga deleniti recusandae, itaque obcaecati.
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
+ 
+
+        <section id="contact">
+            <h1 class="h-primary center">Contact Us</h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input type="text " name="name" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Email: </label>
+                        <input type="email " email="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Phone Number: </label>
+                        <input type="phone " name="name" id="phone" placeholder="Enter your phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="but">Submit</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                copyright &copy; www.Housing.com. All rights reserved!
+
+            </div>
+        </footer>
 
         <div class="container ">
             <h2>Fading Modal</h2>
@@ -247,6 +430,9 @@
                             
                             <button type="button" class="btn-close btn-dark"  data-dismiss="modal"></button>
                         </div>
+
+                        
+                        
 <style>
     .amt{
         font-size: 1.1em;
@@ -261,6 +447,7 @@
         font-weight: 900;
         color: rgb(71, 192, 71);
     }
+
 </style>
                         <!-- Modal body -->
                         <div class="modal-body bg-dark container-fluid">
